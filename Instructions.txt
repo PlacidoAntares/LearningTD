@@ -1,0 +1,21 @@
+Tower Defense Instructions
+
+Installation instructions:
+Unzip this rar file in the desired location. TowerDefense_Data needs to be
+in the same location as TowerDefense.exe
+
+Game instructions
+
+1.Standard Tower Defense objectives:
+= Build towers
+= Kill waves of enemies 
+= don't let any enemies through
+
+2.Left click on a turret image to select it then left click on a empty square to build the turret. Left clicking on a placed turret brings up the upgrade/sell UI.
+
+
+3.Turret types (from left to right):
+=Standard Turret (single target non splash damage)
+=Missile Launcher(single target with splash damage)
+=Laser Turret (single target,slowing effect)
+

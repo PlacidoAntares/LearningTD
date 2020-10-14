@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1867041306931668}
+  m_IsPrefabParent: 1
+--- !u!1 &1867041306931668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4734021855404890}
+  - component: {fileID: 114932644365345068}
+  - component: {fileID: 114098376924326760}
+  - component: {fileID: 114137794156253356}
+  - component: {fileID: 114214207222698676}
+  - component: {fileID: 114738471729400570}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4734021855404890
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867041306931668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 15.97, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114098376924326760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867041306931668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab61df95ff85cd64d93faaf9781b14dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardTurretPrefab: {fileID: 1087283557417048, guid: 5eec2283bb88b3544990afeca85c249a,
+    type: 2}
+  missileTurretPrefab: {fileID: 1977055199531480, guid: 91d468d25d4eede45bb3c94cbc301625,
+    type: 2}
+  BuildFX: {fileID: 1022546273169178, guid: 02ac8473e8eb7d04f9be6a377ceb9fd1, type: 2}
+  nodeUI: {fileID: 0}
+--- !u!114 &114137794156253356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867041306931668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0510143587d0c64f82ce34c62f8af6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startLives: 10
+  startMoney: 400
+--- !u!114 &114214207222698676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867041306931668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f469a00effcc284abf072a1392f2a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 0}
+  completeLevelUI: {fileID: 0}
+--- !u!114 &114738471729400570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867041306931668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1176253e3cc1c044db5fec60eaa02156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI: {fileID: 0}
+  menuSceneName: tower_defense_mainmenu
+  scenefader: {fileID: 0}
+--- !u!114 &114932644365345068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867041306931668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6802f78931bc5274a8717bafdb52c008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - enemy: {fileID: 1160254136537570, guid: c6b743cd0fb22a945b78a12934607bc3, type: 2}
+    count: 10
+    rate: 1
+  - enemy: {fileID: 1137687089924740, guid: d789872a7ea864d438aa691425db3f06, type: 2}
+    count: 6
+    rate: 1
+  - enemy: {fileID: 1020515273064510, guid: 521804952ea2f0f4eaa12ba9ea181f74, type: 2}
+    count: 5
+    rate: 1
+  - enemy: {fileID: 1020515273064510, guid: 521804952ea2f0f4eaa12ba9ea181f74, type: 2}
+    count: 10
+    rate: 1
+  - enemy: {fileID: 1317602929465396, guid: 7c0d33e06926a6843b86587432d24d9e, type: 2}
+    count: 1
+    rate: 1
+  spawnPoint: {fileID: 0}
+  timeBetweenWaves: 5
+  waveCounterText: {fileID: 0}
+  gameManager: {fileID: 114214207222698676}
